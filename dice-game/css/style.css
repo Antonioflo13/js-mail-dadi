@@ -1,0 +1,53 @@
+/* common */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Monoton', cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    height: 100vh;
+    padding: 30px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0a/DICE_%28Ticketing_Company%29_logo.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+main img {
+    width: 200px;
+}
+
+#container {
+    margin-top: 50px;
+}
+
+#pc,
+#g1,
+#risultato {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    color: rgb(133, 167, 227);
+}
+
+span {
+    color: black;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: cornflowerblue;
+}

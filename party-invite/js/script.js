@@ -29,21 +29,21 @@ for (var i = 0; i < invited.length; i++) {
 if (inList == true) {
     console.log("Ecco il tuo invito!");
     document.getElementById ("invitation").innerHTML = (messagge);
+    stop = true; 
     
 } else if (inList == false) {
     var code = prompt("Inserisci il codice segreto per accreditarti!");
+ 
 }
-    
-    
+
 checkCode = true;
-if (secretCode !== code) {  
+if (secretCode !== code  && stop != true)  {  
     checkCode = false;   
     console.log("Il codice è errato non puoi accreditarti!");
     document.getElementById ("invitation") .innerHTML = (messaggeCodeKo);
-} else {
+} else if(stop != true){
     invited.push(email);
     console.log(invited);
     console.log("Perfetto, ti sei accreditato!");
     document.getElementById ("invitation") .innerHTML = (messaggeCodeOk);
 }
-// stampa un messaggio appropriato sull'esito del controllo.
