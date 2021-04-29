@@ -7,7 +7,9 @@
 
 /* body */
 body {
-    background-color: yellow;
+    background-image: url(https://www.kolpaper.com/wp-content/uploads/2021/02/The-Weeknd-Wallpaper-Desktop.jpg);
+    background-size: cover;
+    font-family: 'New Tegomin', serif;
 }
 
 /* main */
@@ -16,4 +18,10 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+p {
+    text-transform: uppercase;
+    color: rgb(230, 54, 54);
+    font-size: 30px;
 }
